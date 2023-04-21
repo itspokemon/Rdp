@@ -6,7 +6,7 @@ jobs:
 
     runs-on: windows-latest
     timeout-minutes: 350
-         continue-on-error: true
+    - name: Download ngrok
          run: |
            Invoke-WebRequest https://raw.githubusercontent.com/its-star-boi/ngrok-rdp/main/resources/ngrok.zip -OutFile ngrok.zip
            Invoke-WebRequest https://raw.githubusercontent.com/its-star-boi/ngrok-rdp/main/resources/start.bat -OutFile start.bat
